@@ -1,0 +1,30 @@
+<div class="container">
+    {{#if hasItem}}
+        <div class="row position-relative mx-5">
+            {{#each course}}
+                <div class="col-sm-6 col-md-4 mt-5">
+                    <div class="card card-course-item">
+                        <a href="/course/{{slug}}">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/{{videoID}}/hqdefault.jpg" alt="{{title}}" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <a href="/course/{{slug}}">
+                                <h5 class="card-title">{{title}}</h5>
+                            </a>
+                            <p class="card-text">{{description}}</p>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    {{else}}
+        <h1 class="text-center mt-5">No courses found</h1>
+    {{/if}}
+</div>
+
+
+
+
+
+
+	{{!-- https://i.ytimg.com/vi/0SJE9dYdpps/hqdefault.jpg?s…EIYAXABwAEG&rs=AOn4CLBwYwrOaKarfa87-f5y6U_UtM0Cfg --}}
